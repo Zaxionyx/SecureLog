@@ -10,13 +10,18 @@ class Logging_Functions:
         now = current_time.strftime("%H:%M:%S %m - %d- %Y")
         print(f"Current Date and Time:{now}")
 
-        log_entry = (datetime, message, level)
+        log_entry = (now, message, level)
         if category in self.categories:
             self.categories[category].append(log_entry)
         else:
             print(f"Warning: Category '{category}' not found. Log not added.")
-            
+
+        logbook = Logging_Functions()
         
+
+
+
+  
 
 
 
