@@ -1,0 +1,1 @@
+print("SecureLog is ready!")
