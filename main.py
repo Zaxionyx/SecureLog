@@ -11,7 +11,13 @@ class Logging_Functions:
         print(f"Current Date and Time:{now}")
 
         log_entry = (datetime, message, level)
+        if category in self.categories:
+            self.categories[category].append(log_entry)
+        else:
+            print(f"Warning: Category '{category}' not found. Log not added.")
+            
         
+
 
 
     
