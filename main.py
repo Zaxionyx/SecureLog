@@ -16,7 +16,7 @@ class Logging_Functions:
         else:
             print(f"Warning: Category '{category}' not found. Log not added.")
 
-        logbook = Logging_Functions()
+logbook = Logging_Functions()
         
 
 
