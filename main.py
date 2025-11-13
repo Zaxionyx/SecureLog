@@ -24,7 +24,7 @@ class Logging_Functions:
         log_list = []
         for logs in self.categories.values():
             log_list.extend(logs)
-            return log_list[-3:]
+        return log_list[-3:]
             
 
 
