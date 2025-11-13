@@ -1,4 +1,5 @@
 import datetime
+import logging
 
 
 class Logging_Functions:
@@ -15,9 +16,25 @@ class Logging_Functions:
             self.categories[category].append(log_entry)
         else:
             print(f"Warning: Category '{category}' not found. Log not added.")
+    
+    def get_logs_by_category(self, categories):
+       return self.categories.get(categories, [])
+    
+    def get_recent_logs(self,limit):
+        log_list = []
+        for logs in self.categories.values():
+            log_list.extend(logs)
+            return log_list[-3:]
+            
 
-logbook = Logging_Functions()
-        
+
+ 
+
+    
+
+
+
+
 
 
 
